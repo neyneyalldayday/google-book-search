@@ -1,11 +1,39 @@
 
 import './App.css';
+import Navbar from "./components/navbar";
+import Home from "./pages/home";
+import Search from "./pages/search";
+import Saved from "./pages/saved";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-     <h1>neyneyalldayday</h1>
+    <Router>
+    <>
+  
+    <Navbar />
+    <div className="container mt-2" style={{ marginTop: 40 }}>
+      <Switch>
+      <Route  exact path="/">
+      <Home />
+      </Route>
+      <Route path="/search">
+      <Search />
+      </Route>
+      <Route path="/saved">
+      <Saved />
+      </Route>
+      </Switch>     
+      
+     
     </div>
+     </>
+     </Router>
   );
 }
 
