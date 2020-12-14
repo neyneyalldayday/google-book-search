@@ -40,6 +40,7 @@ const Navbar = () => {
                     className="navbar-item"
                     activeClassName="is-active"
                     to="/saved">
+                        saved
                 </NavLink>
              </div>
             
