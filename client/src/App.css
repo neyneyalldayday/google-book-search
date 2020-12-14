@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+}
+
+.has-text-centered {
+  font-size: 3rem;
+}
+
 
 
 /* @media (prefers-reduced-motion: no-preference) {
