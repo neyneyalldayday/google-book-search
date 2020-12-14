@@ -1,5 +1,6 @@
 {
   "homepage": "http://neyneyalldayday.github.io/google-book-search",
+  "main": "server.js",
   "name": "google-book-search",
   "version": "0.1.0",
   "private": true,
@@ -15,10 +16,15 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "heroku-postbuild": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,6 +47,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4"
   }
 }
