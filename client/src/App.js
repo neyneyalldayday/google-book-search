@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Search from "./pages/search";
 import Saved from "./pages/saved";
 import Title from "./components/title"
+import "./icons"
 import {
   BrowserRouter as Router,
   Switch,

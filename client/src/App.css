@@ -3,7 +3,12 @@
 }
 
 h1 {
+  
+  justify-items: center;
+  align-items: center;
   text-align: center;
+  color: rgb(11, 114, 59);
+  
 }
 
 .has-text-centered {
@@ -32,6 +37,29 @@ h1 {
     border: 3px  solid salmon;
     width:600px;
    }
+
+   body {
+     background-image: url(./components/booksimage/gettyimages-157482029-612x612.jpg);
+     background-blend-mode: normal;
+      background-size: 100%; 
+      object-fit: cover;
+     object-position: center;
+      background-repeat: no-repeat;
+      background-color: thistle;
+   }
+section {
+  font-size: 50px;
+  color: rgb(210, 238, 118);
+  text-decoration: underline;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  -webkit-text-stroke: 1.11px rgba(33, 29, 68, 0.671); /* stroke width and color */
+  -webkit-font-smoothing: antialiased;
+}
+
+
+  
 
   
   
