@@ -11,6 +11,30 @@ h1 {
 }
 
 
+.main {
+  display:flex;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    min-width:1280px;
+    display: flex;
+    justify-content: center;
+    
+      
+   }
+
+   .notification {
+    border: 3px  solid salmon;
+    width:600px;
+   }
+
+  
+  
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -9,6 +9,12 @@ function Saved() {
     loadBooks()
   }, [])
 
+  function deleteBook(id) {
+    API.deleteBook(id)
+    .then(res => loadBooks())
+    .catch(err => console.log(err));
+  }
+
 
   function loadBooks() {
     API.getBooks()
@@ -18,8 +24,9 @@ function Saved() {
       .catch(err => console.log(err));
   }; 
 return(
-  <div class="container is-max-desktop">
-  <div class="notification is-primary">
+  <div className="main">
+  <div className="container is-max-desktop">
+  <div className="notification is-primary">
   <h1 className="title is-1">your saved Books</h1>
   {books.length ? (
               <List>
@@ -31,7 +38,7 @@ return(
                           {book.title} by {book.author}
                         </strong>
                       </a>
-                      <DeleteBtn onClick={() =>{}} />
+                      <DeleteBtn onClick={() => deleteBook(book._id)} />
                     </ListItem>
                   );
                 })}
@@ -41,7 +48,7 @@ return(
             )}
   </div>
 </div>
-
+</div>
 
 
 )
