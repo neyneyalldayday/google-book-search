@@ -27,8 +27,27 @@ function Search() {
     setFormObject({...formObject, [name]: value})
   };
 
+ 
+
   function handleFormSubmit(event) {
     event.preventDefault();
+    
+
+
+    if (formObject.title && formObject.author) {
+      API.searchBook({
+        title: formObject.title,
+        author: formObject.author,
+        synopsis: formObject.synopsis
+      })
+      .then(() =>  setFormObject({
+        title: "",
+        author: "",
+        synopsis: ""
+      }))
+      .then(() => loadBooks())
+      .catch(err => console.log(err));
+    }
     if (formObject.title && formObject.author) {
       API.saveBook({
         title: formObject.title,

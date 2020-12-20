@@ -1,3 +1,46 @@
+google book search
+ 
+## Description
+ 
+this app lets you find and save books. any book that is on googles api server. i was unable to get images to  render. had a brain fart i guess. actually being able to purchace books would be fun to code too.
+ 
+## Table of Contents
+ 
+* [Installation](#Installation) 
+* [Usage](#Usage) 
+* [License](#License) 
+* [contributor](#contributor) 
+* [Tests](#Tests)
+* [username](#username) 
+* [email](#email)
+ 
+## Installation
+ 
+i used bulma font awesome react node.js express mongo db and a few other things
+ 
+## usage
+
+this app is used to find books
+ 
+## contributor 
+ 
+none
+ 
+## Tests
+i did not implement testing, i did have some issues with bable that took a while to figure out. at one point i switched to yarn from npm based off the terminals advice. turns out not all advice is "adviseable" lol it was more headache. so i switched backand brought the homework back from the grave.
+ 
+## Licence
+
+![Badge](https://img.shields.io/badge/license-MIT License-green)
+ 
+## Username
+
+[Github Profile](https://github.com/neyneyalldayday/)
+ 
+## Email
+
+I can be contacted at this email: <drfrankenstein123@gmail.com>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
