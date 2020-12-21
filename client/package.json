@@ -4,9 +4,7 @@
   "description": "",
   "private": true,
   "proxy": "http://localhost:3001/",
-  "engines":  {
-    "node": "12.x"
-  },
+  
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
