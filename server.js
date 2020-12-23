@@ -9,7 +9,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/reactreading
 
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true} );
-mongoose.connect("mongodb://localhost/reactreadinglist");
+// mongoose.connect("mongodb://localhost/reactreadinglist");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
