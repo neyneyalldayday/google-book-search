@@ -9,7 +9,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/reactreading
 
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true} );
-// mongoose.connect("mongodb://localhost/reactreadinglist");
+// mongoose.connect("mongodb+srv://neyneyalldayday:FrankY242424!@cluster0.dbld7.mongodb.net/googleBookSearch?retryWrites=true&w=majority");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -25,5 +25,6 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
+  console.log("sucker")
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
