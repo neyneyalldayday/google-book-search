@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { List, ListItem } from "../components/list";
-import DeleteBtn from "../components/DeleteBtn/delete";
+import DeleteBtn from "../components/DeleteBtn";
 import API from "../utils/API";
 function Saved() {
   const [books, setBooks] = useState([])

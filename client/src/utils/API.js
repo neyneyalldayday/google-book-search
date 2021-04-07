@@ -22,7 +22,7 @@ export default {
     return axios.post("/api/books", bookData);
   },
 
-  searchBook: function(title){
-    return axios.get("https://www.googleapis.com/books/v1/volumes?q="+title);
+  searchBook: function(title, image){
+    return axios.get("https://www.googleapis.com/books/v1/volumes?q="+title + image);
   }
 };
