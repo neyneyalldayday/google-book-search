@@ -9,25 +9,18 @@ import "./icons"
 import {  Route, Switch, } from "react-router-dom";
 
 function App() {
+
+
   return (
    
-    <>
-    
+    <>   
     <Navbar />
-    <Title />
-    <div className="container mt-2" style={{ marginTop: 40 }}>
+    <Title />    
     <Switch>
-    <Route  exact path="/">
-      <Home />
-      </Route>
-      <Route path="/search">
-      <Search />
-      </Route>
-      <Route path="/saved">
-      <Saved />
-      </Route>
-    </Switch>    
-    </div>
+    <Route  exact component={Home}/>
+    <Route path="/search" component={Search}/>
+    <Route path="/saved" component={Saved}/>
+     </Switch>    
      </>
     
   );
