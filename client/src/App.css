@@ -38,8 +38,7 @@ h1 {
     width:600px;
    }
 
-   body {
-     background-image: url(./components/booksimage/gettyimages-157482029-612x612.jpg);
+   body {    
      background-blend-mode: normal;
       background-size: 100%; 
       object-fit: cover;

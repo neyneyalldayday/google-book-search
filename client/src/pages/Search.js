@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import API from "../../utils/API";
-import { Input, TextArea, FormBtn } from "../../components/form";
+import API from "../utils/API";
+import { Input, TextArea, FormBtn } from "../components/form";
 function Search() {
   const [setBooks] = useState([])
   const [formObject, setFormObject] = useState({

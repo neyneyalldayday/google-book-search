@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { List, ListItem } from "../../components/list";
-import DeleteBtn from "../../components/DeleteBtn/delete";
-import API from "../../utils/API";
+import { List, ListItem } from "../components/list";
+import DeleteBtn from "../components/DeleteBtn/delete";
+import API from "../utils/API";
 function Saved() {
   const [books, setBooks] = useState([])
 
@@ -23,6 +23,7 @@ function Saved() {
       )
       .catch(err => console.log(err));
   }; 
+  
 return(
   <div className="main">
   <div className="container is-max-desktop">
@@ -32,7 +33,7 @@ return(
               <List>
                 {books.map(book => {
                   return (
-                    <ListItem key={book._id}>
+                    <ListItem  key={book._id} >
                       <a href={"/books/" + book._id}>
                         <strong>
                           {book.title} by {book.author}

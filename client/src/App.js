@@ -1,29 +1,23 @@
 import React from "react";
 import './App.css';
 import Navbar from "./components/navbar";
-import Home from "./pages/home";
-import Search from "./pages/search";
-import Saved from "./pages/saved";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 import Title from "./components/title"
-
 import "./icons"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  
-} from "react-router-dom";
+import {  Route, Switch, } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+   
     <>
     
     <Navbar />
     <Title />
     <div className="container mt-2" style={{ marginTop: 40 }}>
-      <Switch>
-      <Route  exact path="/">
+    <Switch>
+    <Route  exact path="/">
       <Home />
       </Route>
       <Route path="/search">
@@ -32,13 +26,10 @@ function App() {
       <Route path="/saved">
       <Saved />
       </Route>
-      </Switch> 
-      
-      
-     
+    </Switch>    
     </div>
      </>
-     </Router>
+    
   );
 }
 
