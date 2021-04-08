@@ -12,7 +12,8 @@ function SearchComponent() {
 
   useEffect(() => {
     loadBooks()
-  }, [])
+  
+  }, )
 
   function loadBooks() {
     API.getBooks()
@@ -20,6 +21,7 @@ function SearchComponent() {
         setBooks(res.data)
       )
       .catch(err => console.log(err));
+    
   };
 
   function handleInputChange(event) {

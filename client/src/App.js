@@ -6,7 +6,7 @@ import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import Title from "./components/title"
 import "./icons"
-import {  Route, Switch, } from "react-router-dom";
+import {  Route, Switch } from "react-router-dom";
 
 function App() {
 
